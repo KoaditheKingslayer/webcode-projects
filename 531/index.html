@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Five Three One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <section id="main" class="viewport">
+            <h3>Five Three One</h3>
+
+            Have you ever felt the need to decide on a something, like a place to eat, but for 
+            some reason you just couldn't get your mind to cooperate? Making a list of places 
+            can sometimes be a lot easier than deciding on some place from that list, especially 
+            when the choice seems arbitrary. Fewer choices makes things easier, especially when 
+            someone (or something) is enabling your choices by narrowing it down.<br />
+            If this has happened to you, then my Five Three One tool is for you! Just enter five 
+            choices, and this tool will help you narrow it down to three! 
+            <div class="input">
+                <div class="add left">
+                    <label id="addLabel" for="add">Input five Terms:</label>
+                    <input id="add" name="add" placeholder="add">
+                    <button id="addTerm" class="btn">Add Term</button>
+                </div>
+                <div class="add left">
+                    <label id="removeLabel" for="selectRemove">Remove a Term:</label>
+                    <select id="selectRemove" name="selectRemove">
+                        <option value="default" disabled>------- Select A Term -------</option>
+                    </select>
+                    <button id="removeTerm" class="btn">Remove Term</button>
+                    <br>
+                    <button id="go" class="btn">Go!</button>
+                </div>
+            </div>
+
+            <div class="container">
+            </div>
+
+            <div class="container2">
+
+            </div>
+
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

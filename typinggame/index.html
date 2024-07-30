@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Speed Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class ="col-12 header">
+                    <h4>Lets play the typing speed game. 
+                        Start typing the text as it appears below to start the timer! 
+                        Try to beat your own high score!
+                        Press Reset to try again!
+                    </h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 origin-text">
+                    <p class="text">This is a typing test. The quick brown fox jumps over the lazy dog.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="col-12 text-wrapper">
+                        <textarea id="textArea" name="text" rows="6" placeholder="Start typing the text here to start the game"></textarea>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6" id="clock">
+                                <div class="timer-wrapper">
+                                    <p class="timer">00:00:00</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <button id="reset" class="btn btn-primary button">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

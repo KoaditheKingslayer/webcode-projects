@@ -1,0 +1,57 @@
+.mainContainer{
+    display: flex;
+    padding: 1em;
+    height: 100vh;
+    justify-content: center;
+    background-color: darkslategrey;
+}
+ 
+.clockBox #clock{
+    width: 100%;
+}
+ 
+.circle {
+    fill: none;
+    stroke: red;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+ 
+.sizing-box {
+    fill: none;
+}
+ 
+.hour-marks {
+    fill: none;
+    stroke: white;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+ 
+.hour-arm {
+    fill: none;
+    stroke: blue;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+ 
+.minute-arm {
+    fill: none;
+    stroke: green;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+ 
+}
+ 
+.second-arm {
+    fill: none;
+    stroke: yellow;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+ 
+#hour,#minute,#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+ 
+}

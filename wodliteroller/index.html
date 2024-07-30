@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dice Roller Concept</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <section id="input">
+            <h3>Input Options</h3>
+<!-- Abilities -->
+            <div class="col">
+                <div class="left">
+                    <span class="label">Strength: <span id="l-str" class="stat hidden">0</span></span>
+                    <input class="in-box" id="str" type="number" min="1" max="5" value="1">
+                </div>
+
+                <div class="left">
+                    <span class="label">Dexterity: <span id="l-dex" class="stat hidden">0</span></span>
+                    <input class="in-box" id="dex" type="number" min="1" max="5" value="1">
+                </div>
+
+                <div class="left">
+                    <span class="label">Stamina: <span id="l-sta" class="stat hidden">0</span></span>
+                    <input class="in-box" id="sta" type="number" min="1" max="5" value="1">
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="left">
+                    <span class="label">Charisma: <span id="l-cha" class="stat hidden">0</span></span>
+                    <input class="in-box" id="cha" type="number" min="1" max="5" value="1">
+                </div>
+
+                <div class="left">
+                    <span class="label">Manipulation: <span id="l-man" class="stat hidden">0</span></span>
+                    <input class="in-box" id="man" type="number" min="1" max="5" value="1">
+                </div>
+
+                <div class="left">
+                    <span class="label">Appearance: <span id="l-app" class="stat hidden">0</span></span>
+                    <input class="in-box" id="app" type="number" min="1" max="5" value="1">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="left">
+                    <span class="label">Perception: <span id="l-per" class="stat hidden">0</span></span>
+                    <input class="in-box" id="per" type="number" min="1" max="5" value="1">
+                </div>
+
+                <div class="left">
+                    <span class="label">Intelligence: <span id="l-int" class="stat hidden">0</span></span>
+                    <input class="in-box" id="int" type="number" min="1" max="5" value="1">
+                </div>
+
+                <div class="left">
+                    <span class="label">Wits: <span id="l-wit" class="stat hidden">0</span></span>
+                    <input class="in-box" id="wit" type="number" min="1" max="5" value="1">
+                </div>
+            </div>
+<!-- Abilities -->
+            <div class="col">
+                <div class="left">
+                    <span class="label">Alertness: <span id="l-ale" class="stat hidden">0</span></span>
+                    <input class="in-box" id="ale" type="number" min="0" max="5" value="0">
+                </div>
+
+                <div class="left">
+                    <span class="label">Athletics: <span id="l-ath" class="stat hidden">0</span></span>
+                    <input class="in-box" id="ath" type="number" min="0" max="5" value="0">
+                </div>
+
+                <div class="left">
+                    <span class="label">Brawl: <span id="l-bra" class="stat hidden">0</span></span>
+                    <input class="in-box" id="bra" type="number" min="0" max="5" value="0">
+                </div>
+
+            </div>
+
+            <div class="col">
+                <div class="left">
+                    <span class="label">Firearms: <span id="l-fir" class="stat hidden">0</span></span>
+                    <input class="in-box" id="fir" type="number" min="0" max="5" value="0">
+                </div>
+
+                <div class="left">
+                    <span class="label">Melee: <span id="l-mel" class="stat hidden">0</span></span>
+                    <input class="in-box" id="mel" type="number" min="0" max="5" value="0">
+                </div>
+
+                <div class="left">
+                    <span class="label">Throw: <span id="l-thr" class="stat hidden">0</span></span>
+                    <input class="in-box" id="thr" type="number" min="0" max="5" value="0">
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="left">
+                    <span class="label">Medicine: <span id="l-med" class="stat hidden">0</span></span>
+                    <input class="in-box" id="med" type="number" min="0" max="5" value="0">
+                </div>
+
+                <div class="left">
+                    <span class="label">Occult: <span id="l-occ" class="stat hidden">0</span></span>
+                    <input class="in-box" id="occ" type="number" min="0" max="5" value="0">
+                </div>
+
+                <div class="left">
+                    <span class="label">Rituals: <span id="l-rit" class="stat hidden">0</span></span>
+                    <input class="in-box" id="rit" type="number" min="0" max="5" value="0">
+                </div>
+            </div>
+            <br>
+            <button id="btn-lock" class="btn">Lock</button>
+
+        </section>
+        
+        <section id="output">
+            <h3>Output Results</h3>
+            <textarea name="text-out" id="text-out" class="out-text"></textarea>
+            <br>
+            <span class="i">Roll</span> 
+            <select id="attribute">
+                <option value="app">Appearance</option>
+                <option value="cha">Charisma</option>
+                <option value="dex">Dexterity</option>
+                <option value="int">Intelligence</option>
+                <option value="man">Manipulation</option>
+                <option value="per">Perception</option>
+                <option value="sta">Stamina</option>
+                <option value="str">Strength</option>
+                <option value="wit">Wits</option>
+            </select>
+            + 
+            <select id="ability">
+                <option value="ale">Alertness</option>
+                <option value="ath">Athletics</option>
+                <option value="bra">Brawl</option>
+                <option value="fir">Firearms</option>
+                <option value="med">Medicine</option>
+                <option value="mel">Melee</option>
+                <option value="occ">Occult</option>
+                <option value="rit">Rituals</option>
+                <option value="thr">Throw</option>
+            </select>
+            &nbsp;
+            <button id= "btn-roll" class="btn">Roll</button>
+            <br />
+            Note: This is just a proof of concept for Javascript skill/capabilities.
+            <br />
+            For simplification, this uses the oWoD Dice System, without specialties/exploding 10's, and assumes a difficulty of 6.
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

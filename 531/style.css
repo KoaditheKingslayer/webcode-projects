@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    background-color: rgba(15, 13, 13, 0.6);
+    width: 80vw;
+    min-width: 480px; 
+    height: 360px;
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    line-height: 25px;
+    border-radius: 25px;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgb(7, 3, 97) 0%, rgb(70, 9, 12) 40%, rgb(50, 1, 70) 100%);
+    height: 100vh;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    width: 100px;
+    height: 1.5em;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+#go {
+    margin-left: 110px;
+    margin-top: 20px;
+}
+
+div.input {
+    display: inline-block;
+    margin-top: 2%;
+    background: linear-gradient(90deg, rgb(50,150,150) 0%, rgb(50,150,200) 50%, rgb(50,150,150) 100%);
+    width: 90%;
+    border: 5px solid darkslategray;
+    border-radius: 10px;
+    color: rgb(221, 221, 255);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    padding: 2%;
+}
+
+div.input input {
+    height: 1.5em;
+}
+
+div.input select {
+    height: 1.5em;
+}
+
+div.output {
+    display: inline-block;
+    margin-top: 2%;
+    background: linear-gradient(90deg, rgb(207, 130, 15) 0%, rgb(240, 255, 31) 50%, rgb(207, 130, 15) 100%);
+    width: 90%;
+    border: 5px solid darkslategray;
+    border-radius: 10px;
+    color: rgb(255, 254, 224);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    padding: 2%;
+}
+
+div.result {
+    display: inline-block;
+    margin-top: 2%;
+    background: linear-gradient(90deg, rgb(67, 0, 122) 0%, rgb(147, 225, 255) 50%, rgb(67, 0, 122) 100%);
+    width: 90%;
+    border: 5px solid darkslategray;
+    border-radius: 10px;
+    color: rgb(240, 215, 255);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    padding: 2%;
+}
+
+.radio {
+    line-height: 30px;
+}
+
+input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle;
+}
